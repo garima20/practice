@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+}
+
+.col1 {
+    width: 200px;
+    min-height: 500px;
+}
+
+.col2 {
+    min-width: 100px;
+    border-left: 2px solid black;
+    min-height: 500px;
+}
+
+.col3 {
+    width: 300px;
+    border-left: 2px solid black;
+    min-height: 500px;
+}
+
+@media (max-width: 600px){
+    .col2 {
+        overflow: scroll;
+    }
+}
